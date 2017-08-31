@@ -11,7 +11,7 @@ import UIKit
 private let reuseIdentifier = "RibbonCell"
 private let column = 4
 
-class ViewController: UICollectionViewController {
+class RibbonViewController: UICollectionViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +30,7 @@ class ViewController: UICollectionViewController {
     }
 }
 
-extension ViewController {
+extension RibbonViewController {
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         let width = view.frame.width / CGFloat(column)
         let row = view.frame.height / width
@@ -59,7 +59,7 @@ extension ViewController {
     }
 }
 
-extension ViewController: UICollectionViewDelegateFlowLayout {
+extension RibbonViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = view.frame.width / CGFloat(column)
         return CGSize(width: width, height: width)

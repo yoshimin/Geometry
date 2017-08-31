@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ulR-QW-cE2">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Spiral View Controller-->
+        <scene sceneID="h8s-pT-mIn">
+            <objects>
+                <viewController id="ulR-QW-cE2" customClass="SpiralViewController" customModule="Geometry" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OwP-mb-HoY"/>
+                        <viewControllerLayoutGuide type="bottom" id="6T5-Sz-uQP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nju-VA-aYh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zFL-ag-Z1g" customClass="SpiralView" customModule="Geometry" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="146" width="375" height="375"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="zFL-ag-Z1g" secondAttribute="height" multiplier="1:1" id="4rW-zS-XPd"/>
+                                    <constraint firstAttribute="width" constant="375" id="eo3-Jv-KnE"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zFL-ag-Z1g" firstAttribute="centerX" secondItem="nju-VA-aYh" secondAttribute="centerX" id="eaL-CF-jhj"/>
+                            <constraint firstItem="zFL-ag-Z1g" firstAttribute="centerY" secondItem="nju-VA-aYh" secondAttribute="centerY" id="jdv-Yk-4oh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="spiralViewWidth" destination="eo3-Jv-KnE" id="Nht-Wk-ya2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8NX-D2-0qI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="13.6" y="-52.623688155922046"/>
+        </scene>
+    </scenes>
+</document>

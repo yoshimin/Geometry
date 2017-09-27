@@ -42,7 +42,7 @@ class SpiralView: UIView {
         
         animation.duration = 20
         animation.values = [0, 1, 0]
-        animation.repeatCount = MAXFLOAT
+        animation.repeatCount = .infinity
         animation.isCumulative = true
         
         spiral.add(animation, forKey: animation.keyPath)

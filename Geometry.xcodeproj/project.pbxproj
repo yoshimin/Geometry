@@ -19,6 +19,10 @@
 		463875881F5686A100E61D69 /* Spiral.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 463875871F5686A100E61D69 /* Spiral.storyboard */; };
 		4638758A1F5686BE00E61D69 /* SpiralView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463875891F5686BE00E61D69 /* SpiralView.swift */; };
 		4638758C1F56875000E61D69 /* SpiralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4638758B1F56875000E61D69 /* SpiralViewController.swift */; };
+		881361E71F77605100D74806 /* BubbleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881361E61F77605100D74806 /* BubbleViewController.swift */; };
+		881361E91F77605F00D74806 /* Bubble.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 881361E81F77605F00D74806 /* Bubble.storyboard */; };
+		881361EE1F7765F300D74806 /* BubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881361ED1F7765F300D74806 /* BubbleView.swift */; };
+		881361F01F7A963F00D74806 /* UIColor+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881361EF1F7A963F00D74806 /* UIColor+Random.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +40,10 @@
 		463875871F5686A100E61D69 /* Spiral.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Spiral.storyboard; sourceTree = "<group>"; };
 		463875891F5686BE00E61D69 /* SpiralView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpiralView.swift; sourceTree = "<group>"; };
 		4638758B1F56875000E61D69 /* SpiralViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpiralViewController.swift; sourceTree = "<group>"; };
+		881361E61F77605100D74806 /* BubbleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleViewController.swift; sourceTree = "<group>"; };
+		881361E81F77605F00D74806 /* Bubble.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Bubble.storyboard; sourceTree = "<group>"; };
+		881361ED1F7765F300D74806 /* BubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleView.swift; sourceTree = "<group>"; };
+		881361EF1F7A963F00D74806 /* UIColor+Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Random.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,21 +76,49 @@
 		4638756C1F54047E00E61D69 /* Geometry */ = {
 			isa = PBXGroup;
 			children = (
+				881361E51F775FF700D74806 /* Bubble */,
+				881361E41F775FE200D74806 /* Spiral */,
+				881361E31F775FC000D74806 /* Ribbon */,
 				4638756D1F54047E00E61D69 /* AppDelegate.swift */,
 				463875741F54047E00E61D69 /* Assets.xcassets */,
 				463875791F54047E00E61D69 /* Info.plist */,
 				463875761F54047E00E61D69 /* LaunchScreen.storyboard */,
 				463875851F55BA3200E61D69 /* Main.storyboard */,
+			);
+			path = Geometry;
+			sourceTree = "<group>";
+		};
+		881361E31F775FC000D74806 /* Ribbon */ = {
+			isa = PBXGroup;
+			children = (
 				463875711F54047E00E61D69 /* Ribbon.storyboard */,
 				463875811F54300200E61D69 /* RibbonCell.swift */,
 				463875831F54367700E61D69 /* RibbonCell.xib */,
 				4638757F1F5404DC00E61D69 /* RibbonView.swift */,
 				4638756F1F54047E00E61D69 /* RibbonViewController.swift */,
+			);
+			path = Ribbon;
+			sourceTree = "<group>";
+		};
+		881361E41F775FE200D74806 /* Spiral */ = {
+			isa = PBXGroup;
+			children = (
 				463875871F5686A100E61D69 /* Spiral.storyboard */,
 				463875891F5686BE00E61D69 /* SpiralView.swift */,
 				4638758B1F56875000E61D69 /* SpiralViewController.swift */,
 			);
-			path = Geometry;
+			path = Spiral;
+			sourceTree = "<group>";
+		};
+		881361E51F775FF700D74806 /* Bubble */ = {
+			isa = PBXGroup;
+			children = (
+				881361E61F77605100D74806 /* BubbleViewController.swift */,
+				881361E81F77605F00D74806 /* Bubble.storyboard */,
+				881361ED1F7765F300D74806 /* BubbleView.swift */,
+				881361EF1F7A963F00D74806 /* UIColor+Random.swift */,
+			);
+			path = Bubble;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +185,7 @@
 				463875861F55BA3200E61D69 /* Main.storyboard in Resources */,
 				463875751F54047E00E61D69 /* Assets.xcassets in Resources */,
 				463875731F54047E00E61D69 /* Ribbon.storyboard in Resources */,
+				881361E91F77605F00D74806 /* Bubble.storyboard in Resources */,
 				463875841F54367700E61D69 /* RibbonCell.xib in Resources */,
 				463875881F5686A100E61D69 /* Spiral.storyboard in Resources */,
 			);
@@ -163,9 +200,12 @@
 			files = (
 				463875701F54047E00E61D69 /* RibbonViewController.swift in Sources */,
 				4638758C1F56875000E61D69 /* SpiralViewController.swift in Sources */,
+				881361EE1F7765F300D74806 /* BubbleView.swift in Sources */,
 				4638756E1F54047E00E61D69 /* AppDelegate.swift in Sources */,
+				881361F01F7A963F00D74806 /* UIColor+Random.swift in Sources */,
 				463875801F5404DC00E61D69 /* RibbonView.swift in Sources */,
 				4638758A1F5686BE00E61D69 /* SpiralView.swift in Sources */,
+				881361E71F77605100D74806 /* BubbleViewController.swift in Sources */,
 				463875821F54300200E61D69 /* RibbonCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,6 +372,7 @@
 				4638757E1F54047E00E61D69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
